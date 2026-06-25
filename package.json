@@ -1,0 +1,10 @@
+{
+  "name": "binariyo-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BINARIYO AI - Premium dark AI chat assistant",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}
