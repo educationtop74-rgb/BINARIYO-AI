@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>BINARIYO AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="orb" id="orb"><div class="orb-core"></div></div>
+      <div class="brand-text">
+        <span class="brand-name">BINARIYO<span class="accent">AI</span></span>
+        <span class="brand-status" id="status">ready</span>
+      </div>
+    </div>
+    <button class="icon-btn" id="clearBtn" title="Clear conversation" aria-label="Clear conversation">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1L6 6"/></svg>
+    </button>
+  </header>
+
+  <main class="stream" id="stream">
+    <div class="empty-state" id="emptyState">
+      <div class="empty-orb"></div>
+      <h1>What can I help with?</h1>
+      <p>Ask me anything — I'm listening.</p>
+    </div>
+  </main>
+
+  <form class="composer" id="composer">
+    <textarea
+      id="input"
+      placeholder="Message BINARIYO AI..."
+      rows="1"
+      autocomplete="off"
+    ></textarea>
+    <button type="submit" class="send-btn" id="sendBtn" aria-label="Send message">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+  </form>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
